@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rl_likeview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white2">
+            <TextView
+                android:id="@+id/tv_like"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:text="我的收藏" />
+            <View
+                android:layout_below="@id/tv_like"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="10dp"
+                android:background="#252525" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_nothings"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/rl_likeview"
+            android:visibility="visible">
+            <ImageView
+                android:id="@+id/iv_nothings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/nothings"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"/>
+            <TextView
+                android:id="@+id/tv_nothings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="空空如也~"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_above="@id/iv_nothings"
+                android:layout_marginBottom="50dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_collectionView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/rl_likeview">
+
+            <GridView
+                android:id="@+id/gv_likebooks"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:numColumns="3"
+                android:horizontalSpacing="10dip"
+                android:stretchMode="columnWidth"
+                android:gravity="center" />
+            <Button
+                android:id="@+id/add_button_selector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="去添加"
+                style="@style/textview16sp_center_horizontal"
+                android:background="@drawable/add_button_selector"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp" />
+        </RelativeLayout>
+        <!--<include layout="@layout/buttonbar" />-->
+    </RelativeLayout>
+
+</LinearLayout>

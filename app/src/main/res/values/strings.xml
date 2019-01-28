@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">爱阅读</string>
+    <drawable name="clr_pressed">#f4b78a</drawable>
+    <drawable name="login_pressed">#99009dff</drawable>
+    <drawable name="register_pressed">#99ffffff</drawable>
+    <string name="title_activity_read">ReadActivity</string>
+</resources>

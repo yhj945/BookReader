@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#a3aee9</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorSelected">#F19149</color>
+    <color name="colorbg">#FFFFFF</color>
+    <color name="currColor">#ff44</color>
+    <color name="noCurrColor">#292929</color>
+    <color name="dayModeTextColor">#000000</color>
+    <color name="dayModeBackgroundColor">#c2e8ab79</color>
+    <color name="readTitle">#ffffff</color>
+    <color name="grid_line">#101010</color>
+    <color name="rlbg">#e6e4e4</color>
+    <color name="white2">#FFFFFF</color>
+    <color name="grey">#dedada</color>
+    <color name="saveSelected">#2490f5</color>
+    <color name="save">#502490f5</color>
+
+    <color name="nightColorPrimary">#3b3b3b</color>
+    <color name="nightColorPrimaryDark">#383838</color>
+    <color name="nightColorAccent">#a72b55</color>
+
+</resources>

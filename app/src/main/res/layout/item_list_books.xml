@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:layout_margin="5dp"
+        android:descendantFocusability="blocksDescendants">
+        <ImageView
+            android:id="@+id/imgv_book"
+            android:layout_width="80dp"
+            android:layout_height="71dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/test"
+            android:layout_margin="5dp" />
+        <TextView
+            android:id="@+id/tv_bookname"
+            style="@style/textview16sp"
+            android:layout_width="match_parent"
+            android:layout_alignParentTop="true"
+            android:singleLine="true"
+            android:layout_height="41dp"
+            android:layout_toRightOf="@id/imgv_book"
+            android:layout_marginLeft="20dp"
+            android:text="书名"
+            android:layout_margin="5dp"/>
+        <TextView
+            android:id="@+id/tv_authorname"
+            style="@style/textview12sp"
+            android:layout_width="180dp"
+            android:layout_height="30dp"
+            android:singleLine="true"
+            android:text="作者"
+            android:layout_alignBottom="@+id/imgv_book"
+            android:layout_alignEnd="@+id/tv_bookname"
+            android:layout_alignStart="@+id/tv_bookname" />
+        <cn.itcast.bookreader.utils.MyButton
+            android:id="@+id/bt_addlike"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@drawable/more"
+            android:descendantFocusability="blocksDescendants"
+            android:layout_centerVertical="true"
+            android:layout_alignEnd="@+id/tv_bookname" />
+    </RelativeLayout>
+
+</LinearLayout>

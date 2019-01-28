@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:background="#50000000"
+    android:layout_height="fill_parent"
+    android:gravity="bottom|center_horizontal"
+    android:id="@+id/mainfrm">
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:background="#fff"
+        android:id="@+id/popdialog"
+        android:layout_height="90dp"
+        android:gravity="center_vertical|center_horizontal">
+        <RelativeLayout
+            android:id="@+id/rl_exit_login"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:clickable="true"
+            android:background="@drawable/relativelayout_bgcolor">
+            <ImageView
+                android:id="@+id/iv_logout"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/logout"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/iv_logout"
+                android:text="退出登录"
+                android:textSize="20sp"
+                android:gravity="center_vertical"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_below="@id/rl_exit_login"
+            android:id="@+id/rl_exit_system"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:clickable="true"
+            android:background="@drawable/relativelayout_bgcolor">
+            <ImageView
+                android:id="@+id/iv_off"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/off"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/iv_off"
+                android:text="关闭爱阅读"
+                android:textSize="20sp"
+                android:gravity="center_vertical"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>
